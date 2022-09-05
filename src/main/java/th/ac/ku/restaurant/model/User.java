@@ -1,10 +1,17 @@
 package th.ac.ku.restaurant.model;
 
+
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.UUID;
 
+@Data
+@NoArgsConstructor
 @Entity
 public class User {
 
@@ -17,7 +24,11 @@ public class User {
     private String firstName;
     private String lastName;
     private String role;
+    private String email;
 
+
+
+/*
     public UUID getId() {
         return id;
     }
@@ -64,5 +75,5 @@ public class User {
 
     public void setRole(String role) {
         this.role = role;
-    }
+    }*/
 }
